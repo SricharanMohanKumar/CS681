@@ -30,6 +30,7 @@ public class Main
                     return CLT;})
                         .collect(Collectors.toList());
         CLT.forEach(System.out::println);
+//        System.out.println(LThreshold.get(0));
 
         System.out.print("\nMinimum year of the car in High Bound: ");
         var minYear= CLT.stream().map(Car::Year).min(Comparator.comparing((Integer year) -> year)).get();
