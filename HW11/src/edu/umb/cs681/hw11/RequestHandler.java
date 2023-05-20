@@ -105,7 +105,7 @@ public class RequestHandler implements Runnable{
         }
         catch (InterruptedException ex)
         {
-            ex.printStackTrace();
+            System.out.println("Exception occured"+ex);
         }
     }
 }
